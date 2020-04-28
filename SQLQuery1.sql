@@ -14,16 +14,17 @@ FileGrowth = 1 MB);
 
 Use CNPM
 Create table SanPham(
-MaHang char(20) not null primary key,
+MaHang int identity(1,1) primary key not null,
 TenHang nvarchar(30),
 KhoiLuong int,
 Xuatxu nvarchar(20),
 DonGia float );
-
+select *from SanPham
 
 Use CNPM
 Create table KhachHang(
-TenKH nvarchar(30)not null primary key,
+MaKhach int identity(1,1) primary key not null,
+TenKH nvarchar(30),
 DiaChi nvarchar(30),
 SoDienThoai nvarchar(10),
 Tuoi int);
@@ -31,17 +32,28 @@ Tuoi int);
 
 Use CNPM
 Create table NhanVien(
-TenNV nvarchar(30)not null primary key,
+MaNV int identity(1,1) primary key not null,
+TenNV nvarchar(30),
 DiaChi nvarchar(30),
 SoDienThoai nvarchar(10),
 Tuoi int);
 
+use CNPM
+create table DonHang(
+MaDonHang int identity(1,1) primary key not null,
+MaHang int,
+MaKhach int,
+TenKH nvarchar(30),
+DonGia float,
+foreign key (MaHang) references SanPham(MaHang),
+foreign key (MaKhach) references KhachHang(MaKhach));
+
 insert into SanPham
-	Values ('0001',N'Táo Mỹ',5,N'Bắc Giang',10000)
+	Values (N'Táo Mỹ',5,N'Bắc Giang',10000)
 insert into SanPham
-	Values ('0002',N'Nho Việt',10,N'Hà Nội',20000)
+	Values (N'Nho Việt',10,N'Hà Nội',20000)
 insert into SanPham
-	Values ('0003',N'Vải Thiều',4,N'Bắc Giang',50000)
+	Values (N'Vải Thiều',4,N'Bắc Giang',50000)
 
 
 
@@ -61,10 +73,6 @@ insert into NhanVien
 	Values (N'Nguyễn thị C',N'Trung Quốc',0565656565,30)
 
 
---	Tạo login
-sp_addlogin 'Huy','123'
-sp_addlogin 'MinhHung','1234'
-sp_addlogin 'QuocHung','12345'
 
 
 

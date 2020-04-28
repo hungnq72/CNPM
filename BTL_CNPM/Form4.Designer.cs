@@ -33,11 +33,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtXuatxu = new System.Windows.Forms.TextBox();
+            this.txtKhoiLuong = new System.Windows.Forms.TextBox();
+            this.txtSoLuong = new System.Windows.Forms.TextBox();
+            this.txtDonGia = new System.Windows.Forms.TextBox();
+            this.txtTenHang = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,11 +60,11 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtXuatxu);
+            this.panel1.Controls.Add(this.txtKhoiLuong);
+            this.panel1.Controls.Add(this.txtSoLuong);
+            this.panel1.Controls.Add(this.txtDonGia);
+            this.panel1.Controls.Add(this.txtTenHang);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -93,6 +93,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Đăng bán";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
@@ -103,40 +104,40 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Số lượng";
             // 
-            // textBox5
+            // txtXuatxu
             // 
-            this.textBox5.Location = new System.Drawing.Point(126, 155);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 9;
+            this.txtXuatxu.Location = new System.Drawing.Point(126, 155);
+            this.txtXuatxu.Name = "txtXuatxu";
+            this.txtXuatxu.Size = new System.Drawing.Size(100, 22);
+            this.txtXuatxu.TabIndex = 9;
             // 
-            // textBox4
+            // txtKhoiLuong
             // 
-            this.textBox4.Location = new System.Drawing.Point(126, 120);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 8;
+            this.txtKhoiLuong.Location = new System.Drawing.Point(126, 120);
+            this.txtKhoiLuong.Name = "txtKhoiLuong";
+            this.txtKhoiLuong.Size = new System.Drawing.Size(100, 22);
+            this.txtKhoiLuong.TabIndex = 8;
             // 
-            // textBox3
+            // txtSoLuong
             // 
-            this.textBox3.Location = new System.Drawing.Point(126, 87);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 7;
+            this.txtSoLuong.Location = new System.Drawing.Point(126, 87);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(100, 22);
+            this.txtSoLuong.TabIndex = 7;
             // 
-            // textBox2
+            // txtDonGia
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 53);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 6;
+            this.txtDonGia.Location = new System.Drawing.Point(126, 53);
+            this.txtDonGia.Name = "txtDonGia";
+            this.txtDonGia.Size = new System.Drawing.Size(100, 22);
+            this.txtDonGia.TabIndex = 6;
             // 
-            // textBox1
+            // txtTenHang
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 5;
+            this.txtTenHang.Location = new System.Drawing.Point(126, 18);
+            this.txtTenHang.Name = "txtTenHang";
+            this.txtTenHang.Size = new System.Drawing.Size(100, 22);
+            this.txtTenHang.TabIndex = 5;
             // 
             // label5
             // 
@@ -206,14 +207,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtKhoiLuong;
+        private System.Windows.Forms.TextBox txtSoLuong;
+        private System.Windows.Forms.TextBox txtDonGia;
+        private System.Windows.Forms.TextBox txtTenHang;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtXuatxu;
     }
 }

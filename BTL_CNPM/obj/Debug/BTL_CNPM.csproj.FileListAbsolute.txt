@@ -9,10 +9,10 @@ D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.Form4.resources
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.Form5.resources
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.Form6.resources
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.Form7.resources
-D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.Form8.resources
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.Form9.resources
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.Properties.Resources.resources
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.csproj.GenerateResource.cache
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.csproj.CoreCompileInputs.cache
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.exe
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.pdb
+D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.fKhach.resources

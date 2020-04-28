@@ -25,7 +25,7 @@ namespace BTL_CNPM
         private void quảnLýKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form8 f = new Form8();
+            fKhach f = new fKhach();
             f.Show();
 
         }
