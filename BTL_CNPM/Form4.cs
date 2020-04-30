@@ -20,7 +20,6 @@ namespace BTL_CNPM
         }
         string strConn = "Data Source=DESKTOP-GRFRNP2\\SQLEXPRESS;Initial Catalog=CNPM;Integrated Security=True";
         SqlConnection connect = null;
-        SqlDataAdapter adapter = null;
         SqlCommand cmd = null;
         public void ketnoi()
         {
@@ -45,6 +44,7 @@ namespace BTL_CNPM
             cmd.ExecuteNonQuery();
             ketnoi();
 
+            MessageBox.Show("Đăng bán thành công");
         }
     }
 }
