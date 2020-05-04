@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BTL_CNPM
 {
@@ -15,6 +16,27 @@ namespace BTL_CNPM
         public Form9()
         {
             InitializeComponent();
+            ketnoi();
+
+        }
+        string strConn = "Data Source=DESKTOP-GRFRNP2\\SQLEXPRESS;Initial Catalog=CNPM;Integrated Security=True";
+        SqlConnection connect = null;
+        SqlDataAdapter adapter = null;
+        SqlCommand cmd = null;
+        private void ketnoi()
+        {
+
+            connect = new SqlConnection(strConn);
+            connect.Open();
+            string query = "select *from DoanhThu union select sum(ThuNhap) ";
+            cmd = new SqlCommand(query, connect);
+            adapter = new SqlDataAdapter(cmd);
+            DataTable data = new DataTable();
+            adapter.Fill(data);
+            dataGridView1.DataSource = data;
+
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -22,6 +44,11 @@ namespace BTL_CNPM
             this.Hide();
             Form6 f = new Form6();
             f.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

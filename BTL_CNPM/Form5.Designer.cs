@@ -40,6 +40,7 @@
             this.txtKhoiLuong = new System.Windows.Forms.TextBox();
             this.txtXuatXu = new System.Windows.Forms.TextBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,46 +111,66 @@
             // 
             // txtMaHang
             // 
+            this.txtMaHang.Enabled = false;
             this.txtMaHang.Location = new System.Drawing.Point(12, 405);
             this.txtMaHang.Name = "txtMaHang";
             this.txtMaHang.Size = new System.Drawing.Size(100, 22);
             this.txtMaHang.TabIndex = 22;
+            this.txtMaHang.Visible = false;
             // 
             // txtTenHang
             // 
+            this.txtTenHang.Enabled = false;
             this.txtTenHang.Location = new System.Drawing.Point(12, 433);
             this.txtTenHang.Name = "txtTenHang";
             this.txtTenHang.Size = new System.Drawing.Size(100, 22);
             this.txtTenHang.TabIndex = 23;
+            this.txtTenHang.Visible = false;
             this.txtTenHang.TextChanged += new System.EventHandler(this.txtTenHang_TextChanged);
             // 
             // txtKhoiLuong
             // 
+            this.txtKhoiLuong.Enabled = false;
             this.txtKhoiLuong.Location = new System.Drawing.Point(140, 400);
             this.txtKhoiLuong.Name = "txtKhoiLuong";
             this.txtKhoiLuong.Size = new System.Drawing.Size(100, 22);
             this.txtKhoiLuong.TabIndex = 24;
+            this.txtKhoiLuong.Visible = false;
             this.txtKhoiLuong.TextChanged += new System.EventHandler(this.txtKhoiLuong_TextChanged);
             // 
             // txtXuatXu
             // 
+            this.txtXuatXu.Enabled = false;
             this.txtXuatXu.Location = new System.Drawing.Point(256, 433);
             this.txtXuatXu.Name = "txtXuatXu";
             this.txtXuatXu.Size = new System.Drawing.Size(100, 22);
             this.txtXuatXu.TabIndex = 25;
+            this.txtXuatXu.Visible = false;
             // 
             // txtDonGia
             // 
+            this.txtDonGia.Enabled = false;
             this.txtDonGia.Location = new System.Drawing.Point(140, 433);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(100, 22);
             this.txtDonGia.TabIndex = 26;
+            this.txtDonGia.Visible = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(265, 400);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 27;
+            this.textBox2.Visible = false;
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 462);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.txtDonGia);
             this.Controls.Add(this.txtXuatXu);
             this.Controls.Add(this.txtKhoiLuong);
@@ -184,5 +205,6 @@
         private System.Windows.Forms.TextBox txtKhoiLuong;
         private System.Windows.Forms.TextBox txtXuatXu;
         private System.Windows.Forms.TextBox txtDonGia;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

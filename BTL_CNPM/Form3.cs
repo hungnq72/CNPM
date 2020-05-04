@@ -30,5 +30,28 @@ namespace BTL_CNPM
             Form5 f = new Form5();
             f.Show();
         }
+
+        private void tùyChọnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f = new Form1();
+            f.Show();
+
+        }
+
+        private void liênHệNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

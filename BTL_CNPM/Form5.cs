@@ -46,10 +46,11 @@ namespace BTL_CNPM
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-            string them = "insert into DonHang values ('" + txtMaHang.Text + "',1,'user','" + txtDonGia + "')";
+            connect = new SqlConnection(strConn);
+            connect.Open();
+            string them = "insert into DonHang values ('" + txtMaHang.Text + "', '"+ txtTenHang.Text + "',1,'user','" + txtDonGia.Text + "')";
             cmd = new SqlCommand(them, connect);
-            //cmd.ExecuteNonQuery();
+            cmd.ExecuteNonQuery();
             ketnoi();
             MessageBox.Show("Mua hàng thành công");
         }
@@ -59,8 +60,8 @@ namespace BTL_CNPM
             int index = dataGridView1.CurrentRow.Index;
             txtMaHang.Text = dataGridView1.Rows[index].Cells[0].Value.ToString();
             txtTenHang.Text = dataGridView1.Rows[index].Cells[1].Value.ToString();
-            txtKhoiLuong.Text = dataGridView1.Rows[index].Cells[2].Value.ToString();
-            txtXuatXu.Text = dataGridView1.Rows[index].Cells[3].Value.ToString();
+            //txtKhoiLuong.Text = dataGridView1.Rows[index].Cells[2].Value.ToString();
+            //txtXuatXu.Text = dataGridView1.Rows[index].Cells[3].Value.ToString();
             txtDonGia.Text = dataGridView1.Rows[index].Cells[4].Value.ToString();
 
         }

@@ -39,6 +39,8 @@ namespace BTL_CNPM
 
         private void button1_Click(object sender, EventArgs e)
         {
+            connect = new SqlConnection(strConn);
+            connect.Open();
             string them = " insert into SanPham values(" + "N'" + txtTenHang.Text + "', '" + txtKhoiLuong.Text + "', N'" + txtXuatxu.Text + "', '" + txtDonGia.Text + "')"; 
             cmd = new SqlCommand(them, connect);
             cmd.ExecuteNonQuery();

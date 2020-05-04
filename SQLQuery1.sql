@@ -42,11 +42,26 @@ use CNPM
 create table DonHang(
 MaDonHang int identity(1,1) primary key not null,
 MaHang int,
+TenHang nvarchar(30),
 MaKhach int,
 TenKH nvarchar(30),
 DonGia float,
+);
 foreign key (MaHang) references SanPham(MaHang),
 foreign key (MaKhach) references KhachHang(MaKhach));
+select *From DonHang
+
+drop table DonHang
+
+use CNPM
+create table DoanhThu(
+ID int identity(1,1) primary key not null,
+MaDonHang int,
+ThuNhap float);
+foreign key (MaDonHang) references DonHang(MaDonHang));
+select *from DoanhThu
+drop table DoanhThu
+insert into DoanhThu values (8,2000)
 
 insert into SanPham
 	Values (N'Táo Mỹ',5,N'Bắc Giang',10000)
