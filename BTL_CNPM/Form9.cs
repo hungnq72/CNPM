@@ -28,7 +28,7 @@ namespace BTL_CNPM
 
             connect = new SqlConnection(strConn);
             connect.Open();
-            string query = "select *from DoanhThu union select sum(ThuNhap) ";
+            string query = "select *from DoanhThu";
             cmd = new SqlCommand(query, connect);
             adapter = new SqlDataAdapter(cmd);
             DataTable data = new DataTable();

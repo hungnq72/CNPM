@@ -48,7 +48,7 @@ namespace BTL_CNPM
 
         private void btnthem_Click(object sender, EventArgs e)
         {
-            string them = " insert into KhachHang values(" + "N'" + txtHoTen.Text + "', '" + txtSDT.Text + "', N'" + txtDiaChi.Text + "', '" + txtTuoi.Text + "'where MaKhach = '" + txtID.Text + "' "; 
+            string them = " insert into KhachHang values(" + "N'" + txtHoTen.Text + "', '" + txtSDT.Text + "', N'" + txtDiaChi.Text + "', '" + txtTuoi.Text + "')";
             cmd = new SqlCommand(them, connect);
             cmd.ExecuteNonQuery();
             ketnoi();
@@ -87,7 +87,7 @@ namespace BTL_CNPM
             SqlCommand cmdupdate = new SqlCommand(update, connect);
             cmdupdate.ExecuteNonQuery();
             ketnoi();
-
+            MessageBox.Show("Sửa thành công");
         }
     }
 }
