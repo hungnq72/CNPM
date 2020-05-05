@@ -32,8 +32,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.tbpass = new System.Windows.Forms.TextBox();
-            this.tbusername = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -54,8 +54,8 @@
             // 
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.tbpass);
-            this.panel1.Controls.Add(this.tbusername);
+            this.panel1.Controls.Add(this.txtMatKhau);
+            this.panel1.Controls.Add(this.txtTaiKhoan);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(25, 54);
@@ -83,21 +83,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // tbpass
+            // txtMatKhau
             // 
-            this.tbpass.Location = new System.Drawing.Point(137, 71);
-            this.tbpass.Name = "tbpass";
-            this.tbpass.PasswordChar = '*';
-            this.tbpass.Size = new System.Drawing.Size(100, 22);
-            this.tbpass.TabIndex = 3;
-            this.tbpass.TextChanged += new System.EventHandler(this.tbpass_TextChanged);
+            this.txtMatKhau.Location = new System.Drawing.Point(137, 71);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(100, 22);
+            this.txtMatKhau.TabIndex = 3;
+            this.txtMatKhau.TextChanged += new System.EventHandler(this.tbpass_TextChanged);
             // 
-            // tbusername
+            // txtTaiKhoan
             // 
-            this.tbusername.Location = new System.Drawing.Point(137, 22);
-            this.tbusername.Name = "tbusername";
-            this.tbusername.Size = new System.Drawing.Size(100, 22);
-            this.tbusername.TabIndex = 2;
+            this.txtTaiKhoan.Location = new System.Drawing.Point(137, 22);
+            this.txtTaiKhoan.Name = "txtTaiKhoan";
+            this.txtTaiKhoan.Size = new System.Drawing.Size(100, 22);
+            this.txtTaiKhoan.TabIndex = 2;
             // 
             // label3
             // 
@@ -163,8 +163,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox tbpass;
-        private System.Windows.Forms.TextBox tbusername;
+        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.TextBox txtTaiKhoan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel linkLabel1;

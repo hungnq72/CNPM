@@ -30,6 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -43,8 +45,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -80,6 +80,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(539, 422);
             this.panel1.TabIndex = 1;
+            // 
+            // txtID
+            // 
+            this.txtID.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(120, 15);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 22);
+            this.txtID.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(22, 15);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(25, 17);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "ID:";
             // 
             // btnXoa
             // 
@@ -197,29 +215,11 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Họ và tên:";
             // 
-            // txtID
-            // 
-            this.txtID.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(120, 15);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(100, 22);
-            this.txtID.TabIndex = 21;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(22, 15);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(25, 17);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "ID:";
-            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 491);
+            this.ClientSize = new System.Drawing.Size(589, 507);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "Form7";

@@ -101,5 +101,18 @@ namespace BTL_CNPM
             txtDonGia.Text = dataGridView1.Rows[index].Cells[5].Value.ToString();
 
         }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f = new Form1();
+            f.Show();
+
+        }
+
+        private void quảnLýToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

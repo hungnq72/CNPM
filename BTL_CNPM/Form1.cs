@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Data.SqlClient;
 
 namespace BTL_CNPM
 {
@@ -20,26 +21,32 @@ namespace BTL_CNPM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (tbusername.Text == "admin" && tbpass.Text == "123")
-            {
-                this.Hide();
-                Form6 f = new Form6();
-                f.Show();
-            }
-            else if (tbusername.Text == "user" && tbpass.Text == "123")
-            {
-                this.Hide();
-                Form3 f = new Form3();
-                f.Show();
-            }
-            else if (tbusername.Text == "employee" && tbpass.Text == "123")
+            if (txtTaiKhoan.Text == "admin" && txtMatKhau.Text == "123")
             {
                 this.Hide();
                 Form6 f = new Form6();
                 f.Show();
             }
             else
-                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu, vui lòng nhập lại");
+            {
+                SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-GRFRNP2\SQLEXPRESS;Initial Catalog=SinhVien;Integrated Security=True");
+                conn.Open();
+                string tk = txtTaiKhoan.Text;
+                string mk = txtMatKhau.Text;
+                string sql = "select *from NguoiDung where TaiKhoan = '" + tk + "'and MatKhau='" + mk + "'";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataReader dta = cmd.ExecuteReader();
+                if (dta.Read() == true)
+                {
+                    this.Hide();
+                    Form3 f = new Form3();
+                    f.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Sai tên tài khoản hoặc mật khẩu! Vui lòng nhập lại");
+                }
+            }
 
         }
 

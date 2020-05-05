@@ -41,7 +41,9 @@
             this.txtXuatXu = new System.Windows.Forms.TextBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
@@ -112,7 +114,7 @@
             // txtMaHang
             // 
             this.txtMaHang.Enabled = false;
-            this.txtMaHang.Location = new System.Drawing.Point(12, 405);
+            this.txtMaHang.Location = new System.Drawing.Point(29, 478);
             this.txtMaHang.Name = "txtMaHang";
             this.txtMaHang.Size = new System.Drawing.Size(100, 22);
             this.txtMaHang.TabIndex = 22;
@@ -121,7 +123,7 @@
             // txtTenHang
             // 
             this.txtTenHang.Enabled = false;
-            this.txtTenHang.Location = new System.Drawing.Point(12, 433);
+            this.txtTenHang.Location = new System.Drawing.Point(47, 478);
             this.txtTenHang.Name = "txtTenHang";
             this.txtTenHang.Size = new System.Drawing.Size(100, 22);
             this.txtTenHang.TabIndex = 23;
@@ -131,7 +133,7 @@
             // txtKhoiLuong
             // 
             this.txtKhoiLuong.Enabled = false;
-            this.txtKhoiLuong.Location = new System.Drawing.Point(140, 400);
+            this.txtKhoiLuong.Location = new System.Drawing.Point(105, 478);
             this.txtKhoiLuong.Name = "txtKhoiLuong";
             this.txtKhoiLuong.Size = new System.Drawing.Size(100, 22);
             this.txtKhoiLuong.TabIndex = 24;
@@ -141,7 +143,7 @@
             // txtXuatXu
             // 
             this.txtXuatXu.Enabled = false;
-            this.txtXuatXu.Location = new System.Drawing.Point(256, 433);
+            this.txtXuatXu.Location = new System.Drawing.Point(85, 478);
             this.txtXuatXu.Name = "txtXuatXu";
             this.txtXuatXu.Size = new System.Drawing.Size(100, 22);
             this.txtXuatXu.TabIndex = 25;
@@ -150,7 +152,7 @@
             // txtDonGia
             // 
             this.txtDonGia.Enabled = false;
-            this.txtDonGia.Location = new System.Drawing.Point(140, 433);
+            this.txtDonGia.Location = new System.Drawing.Point(85, 478);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(100, 22);
             this.txtDonGia.TabIndex = 26;
@@ -159,17 +161,28 @@
             // textBox2
             // 
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(265, 400);
+            this.textBox2.Location = new System.Drawing.Point(85, 478);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 27;
             this.textBox2.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BTL_CNPM.Properties.Resources.Banner_ngang;
+            this.pictureBox1.Location = new System.Drawing.Point(29, 461);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(647, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 462);
+            this.ClientSize = new System.Drawing.Size(703, 543);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.txtDonGia);
             this.Controls.Add(this.txtXuatXu);
@@ -186,6 +199,7 @@
             this.Name = "Form5";
             this.Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +220,6 @@
         private System.Windows.Forms.TextBox txtXuatXu;
         private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
