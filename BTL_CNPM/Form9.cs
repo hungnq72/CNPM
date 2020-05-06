@@ -17,7 +17,7 @@ namespace BTL_CNPM
         {
             InitializeComponent();
             ketnoi();
-
+            ketnoi2();
         }
         string strConn = "Data Source=DESKTOP-GRFRNP2\\SQLEXPRESS;Initial Catalog=CNPM;Integrated Security=True";
         SqlConnection connect = null;
@@ -28,7 +28,7 @@ namespace BTL_CNPM
 
             connect = new SqlConnection(strConn);
             connect.Open();
-            string query = "select *from DoanhThu";
+            string query = "select sum(ThuNhap) from DoanhThu";
             cmd = new SqlCommand(query, connect);
             adapter = new SqlDataAdapter(cmd);
             DataTable data = new DataTable();
@@ -36,9 +36,20 @@ namespace BTL_CNPM
             dataGridView1.DataSource = data;
 
 
+        }
+        private void ketnoi2()
+        {
+            connect = new SqlConnection(strConn);
+            connect.Open();
+            string query = "select *from DoanhThu";
+            cmd = new SqlCommand(query, connect);
+            adapter = new SqlDataAdapter(cmd);
+            DataTable data = new DataTable();
+            adapter.Fill(data);
+            dataGridView2.DataSource = data;
+
 
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -47,6 +58,11 @@ namespace BTL_CNPM
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_Click(object sender, EventArgs e)
         {
 
         }

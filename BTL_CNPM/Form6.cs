@@ -76,6 +76,13 @@ namespace BTL_CNPM
             cmd.ExecuteNonQuery();
             ketnoi();
 
+            connect = new SqlConnection(strConn);
+            connect.Open();
+            string delete = "delete from DonHang where MaHang ='" + txtMaHang.Text + "'";
+            cmd = new SqlCommand(delete, connect);
+            cmd.ExecuteNonQuery();
+            ketnoi();
+
             MessageBox.Show("Chốt đơn thành công");
         }
 
@@ -85,8 +92,9 @@ namespace BTL_CNPM
             traloi = MessageBox.Show("Bạn có chắc muốn hủy đơn", "WARNING!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (traloi == DialogResult.Yes)
             {
+                connect = new SqlConnection(strConn);
+                connect.Open();
                 string delete = "delete from DonHang where MaDonHang ='" + txtMaDonHang.Text + "'";
-
                 cmd = new SqlCommand(delete, connect);
                 cmd.ExecuteNonQuery();
                 ketnoi();
@@ -98,6 +106,7 @@ namespace BTL_CNPM
         {
             int index = dataGridView1.CurrentRow.Index;
             txtMaDonHang.Text = dataGridView1.Rows[index].Cells[0].Value.ToString();
+            txtMaHang.Text = dataGridView1.Rows[index].Cells[1].Value.ToString();
             txtDonGia.Text = dataGridView1.Rows[index].Cells[5].Value.ToString();
 
         }
@@ -111,6 +120,11 @@ namespace BTL_CNPM
         }
 
         private void quảnLýToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
 
         }

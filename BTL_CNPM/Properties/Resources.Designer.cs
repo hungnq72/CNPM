@@ -69,5 +69,15 @@ namespace BTL_CNPM.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loai_qua_hiem_hong_socola {
+            get {
+                object obj = ResourceManager.GetObject("loai-qua-hiem-hong-socola", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

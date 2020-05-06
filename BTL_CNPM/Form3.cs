@@ -53,5 +53,12 @@ namespace BTL_CNPM
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fAd f = new fAd();
+            f.Show();
+        }
     }
 }

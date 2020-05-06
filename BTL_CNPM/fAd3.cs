@@ -11,48 +11,41 @@ using System.Data.SqlClient;
 
 namespace BTL_CNPM
 {
-    public partial class Form4 : Form
+    public partial class fAd3 : Form
     {
-        public Form4()
+        public fAd3()
         {
             InitializeComponent();
             ketnoi();
+
         }
         string strConn = "Data Source=DESKTOP-GRFRNP2\\SQLEXPRESS;Initial Catalog=CNPM;Integrated Security=True";
         SqlConnection connect = null;
+
         SqlCommand cmd = null;
-        public void ketnoi()
+        private void ketnoi()
         {
+
             connect = new SqlConnection(strConn);
             connect.Open();
-
-        }
-
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form3 f = new Form3();
-            f.Show();
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             connect = new SqlConnection(strConn);
             connect.Open();
-            string them = " insert into SanPham values(" + "N'" + txtTenHang.Text + "', '" + txtKhoiLuong.Text + "', N'" + txtXuatxu.Text + "', '" + txtDonGia.Text + "')"; 
+            string them = "insert into DonHang values ('0" + "', '" + txtTenHang.Text + "',1,'user','" + txtDonGia.Text + "')";
             cmd = new SqlCommand(them, connect);
             cmd.ExecuteNonQuery();
             ketnoi();
+            MessageBox.Show("Mua hàng thành công");
 
-            MessageBox.Show("Đăng bán thành công");
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            fAd2 f = new fAd2();
+            Form5 f = new Form5();
             f.Show();
 
         }

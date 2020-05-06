@@ -66,8 +66,9 @@ namespace BTL_CNPM
             traloi = MessageBox.Show("Are you sure to delete?", "WARNING!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (traloi == DialogResult.Yes)
             {
+                connect = new SqlConnection(strConn);
+                connect.Open();
                 string delete = "delete from NhanVien where MaNV ='" + txtID.Text + "'";
-
                 cmd = new SqlCommand(delete, connect);
                 cmd.ExecuteNonQuery();
                 ketnoi();

@@ -18,3 +18,6 @@ D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.pdb
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.fKhach.resources
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.fLienHe.resources
 D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.fTroGiup.resources
+D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.fAd.resources
+D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.fAd2.resources
+D:\Study\CNPM\BTL\BTL_CNPM\obj\Debug\BTL_CNPM.fAd3.resources

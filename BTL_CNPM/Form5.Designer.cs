@@ -41,9 +41,10 @@
             this.txtXuatXu = new System.Windows.Forms.TextBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
@@ -167,22 +168,33 @@
             this.textBox2.TabIndex = 27;
             this.textBox2.Visible = false;
             // 
-            // pictureBox1
+            // txtID
             // 
-            this.pictureBox1.Image = global::BTL_CNPM.Properties.Resources.Banner_ngang;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 461);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(647, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(76, 478);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 22);
+            this.txtID.TabIndex = 29;
+            this.txtID.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BTL_CNPM.Properties.Resources.Banner_ngang;
+            this.pictureBox2.Location = new System.Drawing.Point(29, 450);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(647, 72);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 30;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 543);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.txtDonGia);
             this.Controls.Add(this.txtXuatXu);
@@ -199,7 +211,7 @@
             this.Name = "Form5";
             this.Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,6 +232,7 @@
         private System.Windows.Forms.TextBox txtXuatXu;
         private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

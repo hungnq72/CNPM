@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtMaHang = new System.Windows.Forms.TextBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.txtMaDonHang = new System.Windows.Forms.TextBox();
             this.btnHuyDon = new System.Windows.Forms.Button();
@@ -41,6 +43,7 @@
             this.quảnLýKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doanhThuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -58,6 +61,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtMaHang);
             this.panel1.Controls.Add(this.txtDonGia);
             this.panel1.Controls.Add(this.txtMaDonHang);
             this.panel1.Controls.Add(this.btnHuyDon);
@@ -67,6 +71,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(693, 350);
             this.panel1.TabIndex = 1;
+            // 
+            // txtMaHang
+            // 
+            this.txtMaHang.Enabled = false;
+            this.txtMaHang.Location = new System.Drawing.Point(0, 59);
+            this.txtMaHang.Name = "txtMaHang";
+            this.txtMaHang.Size = new System.Drawing.Size(10, 22);
+            this.txtMaHang.TabIndex = 18;
+            this.txtMaHang.Visible = false;
             // 
             // txtDonGia
             // 
@@ -143,30 +156,37 @@
             // qLNhânViênToolStripMenuItem
             // 
             this.qLNhânViênToolStripMenuItem.Name = "qLNhânViênToolStripMenuItem";
-            this.qLNhânViênToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.qLNhânViênToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.qLNhânViênToolStripMenuItem.Text = "QL Nhân viên";
             this.qLNhânViênToolStripMenuItem.Click += new System.EventHandler(this.qLNhânViênToolStripMenuItem_Click);
             // 
             // quảnLýKháchHàngToolStripMenuItem
             // 
             this.quảnLýKháchHàngToolStripMenuItem.Name = "quảnLýKháchHàngToolStripMenuItem";
-            this.quảnLýKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.quảnLýKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.quảnLýKháchHàngToolStripMenuItem.Text = "QL khách hàng";
             this.quảnLýKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.quảnLýKháchHàngToolStripMenuItem_Click);
             // 
             // doanhThuToolStripMenuItem
             // 
             this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
-            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.doanhThuToolStripMenuItem.Text = "Doanh thu";
             this.doanhThuToolStripMenuItem.Click += new System.EventHandler(this.doanhThuToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // Form6
             // 
@@ -204,5 +224,7 @@
         private System.Windows.Forms.TextBox txtMaDonHang;
         private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtMaHang;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

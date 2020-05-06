@@ -53,6 +53,14 @@ namespace BTL_CNPM
             cmd.ExecuteNonQuery();
             ketnoi();
             MessageBox.Show("Mua hàng thành công");
+
+            connect = new SqlConnection(strConn);
+            connect.Open();
+            string delete = "delete from SanPham where MaHang ='" + txtMaHang.Text + "'";
+            cmd = new SqlCommand(delete, connect);
+            cmd.ExecuteNonQuery();
+            ketnoi();
+
         }
 
         private void dataGridView1_Click(object sender, EventArgs e)
@@ -60,8 +68,6 @@ namespace BTL_CNPM
             int index = dataGridView1.CurrentRow.Index;
             txtMaHang.Text = dataGridView1.Rows[index].Cells[0].Value.ToString();
             txtTenHang.Text = dataGridView1.Rows[index].Cells[1].Value.ToString();
-            //txtKhoiLuong.Text = dataGridView1.Rows[index].Cells[2].Value.ToString();
-            //txtXuatXu.Text = dataGridView1.Rows[index].Cells[3].Value.ToString();
             txtDonGia.Text = dataGridView1.Rows[index].Cells[4].Value.ToString();
 
         }
@@ -73,6 +79,19 @@ namespace BTL_CNPM
 
         private void txtTenHang_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fAd3 f = new fAd3();
+            f.Show();
 
         }
     }

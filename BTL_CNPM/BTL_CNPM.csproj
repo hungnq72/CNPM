@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fAd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAd.Designer.cs">
+      <DependentUpon>fAd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAd2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAd2.Designer.cs">
+      <DependentUpon>fAd2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAd3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAd3.Designer.cs">
+      <DependentUpon>fAd3.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLienHe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +132,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAd.resx">
+      <DependentUpon>fAd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAd2.resx">
+      <DependentUpon>fAd2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAd3.resx">
+      <DependentUpon>fAd3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLienHe.resx">
       <DependentUpon>fLienHe.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +199,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Banner ngang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loai-qua-hiem-hong-socola.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

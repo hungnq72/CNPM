@@ -46,7 +46,6 @@ TenHang nvarchar(30),
 MaKhach int,
 TenKH nvarchar(30),
 DonGia float,
-);
 foreign key (MaHang) references SanPham(MaHang),
 foreign key (MaKhach) references KhachHang(MaKhach));
 select *From DonHang
@@ -57,11 +56,21 @@ use CNPM
 create table DoanhThu(
 ID int identity(1,1) primary key not null,
 MaDonHang int,
-ThuNhap float);
+ThuNhap float,
 foreign key (MaDonHang) references DonHang(MaDonHang));
 select *from DoanhThu
 drop table DoanhThu
 insert into DoanhThu values (8,2000)
+
+select sum(ThuNhap) from DoanhThu
+
+create table NguoiDung(
+TaiKhoan nvarchar(50),
+MatKhau nvarchar(50));
+select *from NguoiDung
+insert into NguoiDung 
+	values ('user','123')
+
 
 insert into SanPham
 	Values (N'Táo Mỹ',5,N'Bắc Giang',10000)
